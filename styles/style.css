@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar {
+list-style-type: none;
+display: inline;
+
+}
+
+
+li a {
+    display: inline-block;
+    color: #000;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li.current {
+    background-color: orange;
+}
+
+li a:last-child {
+    float:right; 
+}
