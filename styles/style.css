@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    /* For alle HTML elementene */
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:url('../Bilder/OSLOMET.png'), linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)); /* Bilde tatt av Da Quynh Truong */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.6; /* Gjør den mer ''faded'' i bakgrunnen*/
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items: center;
+}
+nav img {
+    width: 150px; /* Burde kanskje endre logoen eller gjøre at den blir mer intuitiv å trykke på + tok den fra google*/
+    height: auto;
+}
+nav img {
+    order: -1; /* Flytter logoen til begynnelsen av flex containeren*/
+}
+/* Styler lenkene i nav*/
+.nav-links {
+    flex: 1; /* tar plassen på raden*/
+    text-align: right; /* setter teksten på høyreside*/
+}
+.nav-links ul li { 
+    list-style: none; /* fjerner bullet points*/
+    display: inline-block;
+    padding: 8px 12px; /* lager mellomrom mellom listene*/
+    position: relative;
+}
+.nav-links ul li a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after { /* stilen til hover effekten*/
+content: "";
+width: 0%;
+height: 4px; /* tykkelsen på hover-effekten */
+background: #eee95b ;
+display: block;
+margin: auto;
+transform: 0.5s; /* tiden til å reagere på hovere*/
+}
+.nav-links ul li:hover::after {
+width: 100%;
+}
+
+.Tekstboks { /* style hovedoverskriften og knappen*/
+    width: 90%;
+    color: #fff;
+    position: aboslute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* sentrerer teksten*/
+    text-align: center;
+    
+}
+.Tekstboks h1 { /*Redigere font størrelsen*/
+    font-size: 62px;
+}
+.Tekstboks p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff
+}
+
+
+
+/* Accessibility */
+
+
+/* Topical */
+
+/* Om P35 */
