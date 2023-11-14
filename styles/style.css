@@ -24,7 +24,7 @@ nav img {
     width: 150px; /* Burde kanskje endre logoen eller gjøre at den blir mer intuitiv å trykke på + tok den fra google*/
     height: auto;
 }
-nav img {
+.nav img {
     order: -1; /* Flytter logoen til begynnelsen av flex containeren*/
 }
 /* Styler lenkene i nav*/
@@ -75,6 +75,67 @@ width: 100%;
     color:#fff
 }
 
+
+
+
+
+
+
+#burger-toggle {
+    display: none;
+}
+
+nav {
+    background-color:yellow;
+    height: 40px;
+}
+
+@media (min-width: 701px) {
+    .menu {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none; 
+    
+}
+.menu {
+    justify-content:space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}
+
+
+@media (max-width: 700px) {
+    .menu {
+    list-style-type: none;
+    position: sticky;
+    padding-left: 0;
+    }
+
+.menu-icon {
+    display: block;
+    background-image: url("../Bilder/menu-bar.png");
+    background-size: cover;
+    height:40px;
+    width:40px;
+}
+
+.hamburger-toggle-container {cursor: pointer;}
+
+.menu li {
+    height: 0px;
+    overflow: hidden; 
+    
+}
+
+#burger-toggle:checked~.menu li {
+    height: 1rem;
+    width: auto; 
+    padding: left 0.5em;
+    padding: right 0.5em;
+    padding: bottom 0.5em;
+}
+}
 
 
 /* Felles stiler for like stiler */
