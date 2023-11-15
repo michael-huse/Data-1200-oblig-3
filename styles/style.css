@@ -90,8 +90,12 @@ width: 100%;
 
 
 
+
+
+
+
 .main {
-    padding: 0 40px;
+    margin: 0 12%;
 }
 
 h1.accesibility {
@@ -103,6 +107,9 @@ h2 {
     margin-bottom: 30px;
 }
 
+ul.accesibility {
+ margin: 35px;
+}
 p {
     line-height: 1.5em;
     margin-bottom: 30px;
@@ -115,59 +122,37 @@ margin-bottom: 5px;
 #burger-toggle {
     display: none;
 }
-
-
 nav {
    background-color:red;
-    height: 60px;
+    height: 40px;
 }
 
 @media (min-width: 701px) {
 
     .menu {
     display: flex;
-    text-align: center;
     list-style-type: none;
-}
-
-.menu  {
-    display: inline-flex;
     margin-left: 5%;
     margin-right: 10%;
 }
 
 .menu a {
-    text-decoration: none;
+text-decoration: none;
    font-weight: bold;
    font-size: 1.2em;
+   padding-right: 1em;
+   padding-left: 1em;
    text-decoration-color: aquamarine;
+   text-align: center;
 }
 
 .menu li:hover {
-    display: inline-flex;
     color:aquamarine;
     background-color: black;
-    cursor: pointer;
+}
 }
 
-.menu li:first-child{
-    padding-right: 2em;
-    margin-top: 2em;
-}
 
-.menu li:nth-child(2) {
-    padding-right: 2em;
-    margin-top: 2em;
-    text-align:center;
-
-}
-.menu li:last-child {
-
-    padding-rightz: 2em;
-    margin-top: 2em;
-    text-align:center;
-}
-}
 
 
 @media (max-width: 700px) {
