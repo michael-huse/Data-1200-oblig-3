@@ -134,6 +134,8 @@ nav {
     list-style-type: none;
     margin-left: 5%;
     margin-right: 10%;
+    vertical-align: middle;
+    
 }
 
 .menu a {
