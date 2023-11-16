@@ -101,15 +101,14 @@ width: 100%;
 h1.accesibility {
     margin-top: 20px;
     margin-bottom: 60px;
+   text-align: center;
 }
 
 h2 {
     margin-bottom: 30px;
 }
 
-ul.accesibility {
- margin: 35px;
-}
+
 p {
     line-height: 1.5em;
     margin-bottom: 30px;
@@ -119,22 +118,47 @@ p {
 margin-bottom: 5px;
 
 }
+
+footer {
+    text-align: center;
+    background-color: rgba(45, 62, 78, 0.5);
+}
+
+#logo {
+    height:100%;
+    float: left;
+
+}
 #burger-toggle {
     display: none;
 }
-nav {
-   background-color:red;
-    height: 40px;
+
+
+.accessibility nav {
+   background-color:white;
+    height: 40px;  
+    
 }
 
-@media (min-width: 701px) {
+@media (min-width: 800px) {
 
     .menu {
     display: flex;
     list-style-type: none;
     margin-left: 5%;
     margin-right: 10%;
-    vertical-align: middle;
+    height: 60px;
+    border-bottom-style: solid;
+    border-color: #555;
+}
+
+.active {
+    height:100%;
+    display: flex;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-bottom-color: #EA486E;
     
 }
 
@@ -144,24 +168,39 @@ text-decoration: none;
    font-size: 1.2em;
    padding-right: 1em;
    padding-left: 1em;
-   text-decoration-color: aquamarine;
-   text-align: center;
+   color:#000;
 }
 
-.menu li:hover {
-    color:aquamarine;
-    background-color: black;
+.menu li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:#000;
+}
+
+.menu a:hover {
+    color:#d6d2c4;
+    height:100%;
+    display: flex;
+    align-items: center;
+    background-color:#000;
+    
+ 
+}
+
+menu a:visited{
+    color:#d6d2c4;
+}
+
+.accessibility img {
+    width: 5px;
 }
 }
 
-
-
-
-@media (max-width: 700px) {
+@media (max-width: 799px) {
     .menu {
     list-style-type: none;
     position: sticky;
-    padding-left: 0;
     }
 
 .menu-icon {
@@ -170,6 +209,7 @@ text-decoration: none;
     background-size: cover;
     height:40px;
     width:40px;
+    margin-left: 3%;
 }
 
 .hamburger-toggle-container {cursor: pointer;}
@@ -177,15 +217,16 @@ text-decoration: none;
 .menu li {
     height: 0px;
     overflow: hidden; 
-    
 }
-
+.menu a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
 #burger-toggle:checked~.menu li {
-    height: 1rem;
-    width: auto; 
-    padding: left 0.5em;
-    padding: right 0.5em;
-    padding: bottom 0.5em;
+    height: 100px;
+    width: 500px; 
+    background-color:#555;
+    position: absolute;   
 }
 }
 
