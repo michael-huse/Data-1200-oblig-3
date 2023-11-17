@@ -237,3 +237,14 @@ menu a:visited{
 
 
 /* Felles stiler for like stiler */
+
+.headingsl{
+    text-align: center;
+    font-size: 28pt;
+}
+#libraryp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
