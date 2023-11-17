@@ -95,7 +95,7 @@ width: 100%;
 
 
 .main {
-    margin: 0 12%;
+   margin:0 30%;
 }
 
 h1.accesibility {
@@ -113,10 +113,20 @@ p {
     line-height: 1.5em;
     margin-bottom: 30px;
 }
+aside {
+
+    width: 35%;
+    padding: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+  }
 
 .main li {
 margin-bottom: 5px;
-
 }
 
 footer {
@@ -127,7 +137,6 @@ footer {
 #logo {
     height:100%;
     float: left;
-
 }
 #burger-toggle {
     display: none;
@@ -190,10 +199,6 @@ text-decoration: none;
 
 menu a:visited{
     color:#d6d2c4;
-}
-
-.accessibility img {
-    width: 5px;
 }
 }
 
