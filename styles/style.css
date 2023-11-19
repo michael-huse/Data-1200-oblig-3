@@ -4,21 +4,6 @@
     font-family: 'Oswald', sans-serif;
     /* For alle HTML elementene */
 }
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background-image:url('../Bilder/OSLOMET.png'), linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)); /* Bilde tatt av Da Quynh Truong */
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    opacity: 0.6; /* Gjør den mer ''faded'' i bakgrunnen*/
-}
-
-.topical-header{
-    min-height: 100vh;
-    width: 100%;
-    opacity: 0.6; /* Gjør den mer ''faded'' i bakgrunnen*/
-}
 
 nav.index {
     display: flex;
@@ -29,23 +14,26 @@ nav.index {
 nav.index img {
     width: 150px; /* Burde kanskje endre logoen eller gjøre at den blir mer intuitiv å trykke på + tok den fra google*/
     height: auto;
-}
-nav.index img {
+
     order: -1; /* Flytter logoen til begynnelsen av flex containeren*/
 }
+
 /* Styler lenkene i nav*/
 .nav-links {
+    background-color: black;
     flex: 1; /* tar plassen på raden*/
     text-align: right; /* setter teksten på høyreside*/
 }
+
 .nav-links ul li { 
     list-style: none; /* fjerner bullet points*/
     display: inline-block;
     padding: 8px 12px; /* lager mellomrom mellom listene*/
     position: relative;
+
 }
 .nav-links ul li a {
-    color:rgb(0, 0, 0);
+    color:white;
     text-decoration: none;
     font-size: 20px;
 }
@@ -62,32 +50,44 @@ transform: 0.5s; /* tiden til å reagere på hovere*/
 width: 100%;
 }
 
-.Tekstboks { /* style hovedoverskriften og knappen*/
-    width: 90%;
-    color: #fff;
-    position: aboslute;
+/* source: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+body, html {
+    height: 100%
+}
+
+.index-image {
+    position: relative;
+    height: 100%
+}
+
+.index-image::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Bilder/oslometbygg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+/* Place text in the middle of the image */
+.index-image-text {
+    text-align: center;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* sentrerer teksten*/
-    text-align: center;
-    
-}
-.Tekstboks h1 { /*Redigere font størrelsen*/
-    font-size: 62px;
-}
-.Tekstboks p {
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color:#fff
+    transform: translate (-50%, -50%);
+    color: white;
 }
 
-
-
-
-
-
-
-
+.index-footer {
+    background-color: #e7dbdb;
+    color:aqua;
+}
 
 
 
@@ -209,7 +209,7 @@ text-decoration: none;
     height:100%;
     display: flex;
     align-items: center;
-    background-color:#000;
+    background-color: black;
 }
 }
 
@@ -245,7 +245,9 @@ text-decoration: none;
 }
 
 header{
-    background-color: #d6d2c4;
+    background-color: #EA486E;
+    margin-bottom:70px;
+
 }
 .menu a:hover {
     color:#d6d2c4;
