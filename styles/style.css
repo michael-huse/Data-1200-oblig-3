@@ -20,10 +20,11 @@ nav.index img {
 
 /* Styler lenkene i nav*/
 .nav-links {
+    background-color: black;
     flex: 1; /* tar plassen på raden*/
     text-align: right; /* setter teksten på høyreside*/
-
 }
+
 .nav-links ul li { 
     list-style: none; /* fjerner bullet points*/
     display: inline-block;
@@ -32,7 +33,7 @@ nav.index img {
 
 }
 .nav-links ul li a {
-    color:rgb(0, 0, 0);
+    color:white;
     text-decoration: none;
     font-size: 20px;
 }
