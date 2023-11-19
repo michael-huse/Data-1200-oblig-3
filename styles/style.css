@@ -112,18 +112,32 @@ h2 {
 p {
     line-height: 1.5em;
     margin-bottom: 30px;
+    color: rgb(46, 46, 46);
 }
-aside {
 
+.introduction {
+    font-size: 1.2em;
+    color: #555;
+}
+
+  aside { 
+    float: right; 
     width: 35%;
     padding: 15px;
     margin-left: 15px;
-    float: right;
     font-style: italic;
     background-color: rgba(93, 212, 216, 0.3);
     border-radius: 10px;
     vertical-align: middle;
-  }
+
+}
+@media (max-width: 799px) {
+   aside {
+     float: none; 
+     width: 100%;
+     position: inherit;
+    }
+}
 
 .main li {
 margin-bottom: 5px;
@@ -131,7 +145,10 @@ margin-bottom: 5px;
 
 footer {
     text-align: center;
-    background-color: rgba(45, 62, 78, 0.5);
+    background-color:#EA486E;
+    position:sticky;
+    margin-bottom: 0%;
+    height: 100px;
 }
 
 #logo {
@@ -174,7 +191,7 @@ footer {
 .menu a {
 text-decoration: none;
    font-weight: bold;
-   font-size: 1.2em;
+   font-size: 1.3em;
    padding-right: 1em;
    padding-left: 1em;
    color:#000;
