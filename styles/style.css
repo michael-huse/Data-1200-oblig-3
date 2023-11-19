@@ -83,9 +83,10 @@ body, html {
     color: white;
 }
 
-
-
-
+.index-footer {
+    background-color: #e7dbdb;
+    color:aqua;
+}
 
 
 
