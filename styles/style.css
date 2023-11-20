@@ -90,9 +90,10 @@ body, html {
     color: white;
 }
 
-.index-footer {
-    background-color:#eee95b
-    color: black
+.index-footer p {
+    background-color: #eee95b;
+    color: black;
+    padding: 20px;
 }
 
 
@@ -126,7 +127,29 @@ p {
     color: #555;
 }
 
-  aside { 
+
+/*For the topical page */
+
+.topical-main{
+    margin:0 30%;
+}
+
+
+#openAI-image{
+    max-width: 100%;
+    max-height:100%;
+}
+
+#topical-head1{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+
+
+aside { 
     float: right; 
     width: 35%;
     padding: 15px;
