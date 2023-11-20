@@ -365,3 +365,19 @@ header{
 /* Felles stiler for like stiler */
 
 
+/*Library page: */
+
+.h1library {
+    margin-top: 20px;
+    margin-bottom: 60px;
+   text-align: center;
+}
+#libraryImg{
+    max-width: 40%;
+    max-height: 40%;
+    padding-left: 100px;
+}
+
+
+
+/*Library page finish*/
