@@ -131,13 +131,18 @@ p {
 /*For the topical page */
 
 .topical-main{
-    margin:0 30%;
+    margin:0 20%;
+}
+
+.topical-main h3{
+    text-align: center;
 }
 
 
 #openAI-image{
-    max-width: 100%;
-    max-height:100%;
+    max-width: 150%;
+    max-height: 150%;
+    padding-left: 100px;
 }
 
 #topical-head1{
