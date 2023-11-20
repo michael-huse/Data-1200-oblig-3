@@ -127,7 +127,15 @@ p {
 }
 
 #openAI-image{
-    border-radius: 50%;
+    max-width: 100%;
+    max-height:100%;
+}
+
+#topical-head1{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
 }
 
 
