@@ -138,7 +138,6 @@ p {
     text-align: center;
 }
 
-
 #openAI-image{
     max-width: 150%;
     max-height: 150%;
@@ -152,7 +151,7 @@ p {
     column-gap: 5px;
 }
 
-
+/*Topical page finish*/
 
 aside { 
     float: right; 
