@@ -126,6 +126,14 @@ p {
     color: #555;
 }
 
+
+/*For the topical page */
+
+.topical-main{
+    margin:0 30%;
+}
+
+
 #openAI-image{
     max-width: 100%;
     max-height:100%;
