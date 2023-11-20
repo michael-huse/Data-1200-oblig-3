@@ -126,7 +126,13 @@ p {
     color: #555;
 }
 
-  aside { 
+#openAI-image{
+    border-radius: 50%;
+}
+
+
+
+aside { 
     float: right; 
     width: 35%;
     padding: 15px;
