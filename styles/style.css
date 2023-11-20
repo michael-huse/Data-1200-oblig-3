@@ -14,7 +14,6 @@ nav.index {
 nav.index img {
     width: 150px; /* Burde kanskje endre logoen eller gjøre at den blir mer intuitiv å trykke på + tok den fra google*/
     height: auto;
-
     order: -1; /* Flytter logoen til begynnelsen av flex containeren*/
 }
 
@@ -72,6 +71,10 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
+}
+
+.index-map {
+   
 }
 
 /* Place text in the middle of the image */
