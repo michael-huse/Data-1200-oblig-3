@@ -292,19 +292,4 @@ header{
 
 /* Felles stiler for like stiler */
 
-.headingsl{
-    text-align: center;
-    font-size: 28pt;
-}
-.imglib{
-    float: right;
-    width: 70%;
-}
-.poslib{
-    position: absolute;
-    width: 80%;
-    left: 8%;
-    top: 20%;
-    background-color: lightblue;
-    padding: 20px;
-}
+
