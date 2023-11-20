@@ -12,8 +12,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    padding-bottom: 2rem;
 }
-
 
 .nav {
     display: flex;
@@ -110,6 +110,35 @@ width: 100%;
     top:0;
     right: -200px; /* hides the menu bar when scaling on phone*/
     text-align: left;  }
+}
+
+.index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Two columns*/
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.index-map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-text {
+    padding: 1rem 2rem; /* first value top and second value is bottom */
+}
+
+.opening-hours, .closed{
+    color:#EA486E
 }
 
 .index-footercopyright {
