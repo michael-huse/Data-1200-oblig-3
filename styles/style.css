@@ -90,9 +90,10 @@ body, html {
     color: white;
 }
 
-.index-footer {
-    background-color:#eee95b
-    color: black
+.index-footer p {
+    background-color: #eee95b;
+    color: black;
+    padding: 20px;
 }
 
 
