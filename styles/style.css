@@ -217,6 +217,11 @@ p {
     column-gap: 5px;
 }
 
+#bilde-under{
+    text-align: right;
+    padding-right: 12%;
+}
+
 /*Topical page finish*/
 
 aside { 
@@ -401,5 +406,40 @@ header{
 }
 
 
+/*Basert på aside*/
+
+.blue-box-header { 
+    float: right; 
+    width: 70%;
+    padding: 15px;
+    margin-left: 15px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.newsletter-box { 
+    width: 80%;
+    padding: 15px;
+    margin-left: 15px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.newsletter-box h3{
+    padding-top: 3%;
+    text-align: center;
+}
+
+.newsletter-box form{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+form label{
+    padding-bottom: 3%;
+}
 
 /*Library page finish*/
