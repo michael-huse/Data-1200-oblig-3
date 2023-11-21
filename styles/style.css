@@ -8,7 +8,7 @@
 .index-header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../Bilder/OsloMet-bygg2.jpeg); /* source: from OsloMet main page: https://ansatt.oslomet.no/siste-nytt/-/nyhet/siste-nytt-fra-campusprogrammet-*/
+    background-image: url(../Bilder/pilestredet.jpeg); /* source: from OsloMet main page: https://ansatt.oslomet.no/siste-nytt/-/nyhet/siste-nytt-fra-campusprogrammet-*/
     background-position: center;
     background-size: cover;
     position: relative;
@@ -62,7 +62,7 @@ width: 100%;
 
 
 @media (max-width: 700px) and (min-width:701px) { /* Code from Tengel */
-    .index-menu-icon {
+   .index-menu-icon {
         display: block;
         background-image: url(../Bilder/menu-bar.png);
         background-size:cover;
@@ -87,7 +87,7 @@ width: 100%;
 
 .index-textbox {
     width: 90%;
-    color:orange;
+    color:rgb(234, 120, 38);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,31 +95,42 @@ width: 100%;
     text-align: center;
 }
 
-.index-textbox h1 {
+.index-header-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.index-header-content h1 {
+    color: orange;
     font-size: 62px;
+    margin-bottom: 10px;
 }
 
 .index-textbox p{
-    margin: 10px 0 40 px;
-    font-size: 14px;
-    color: #fff;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding:20px;
+    border-radius:10px;
 }
 
 .index-button {
     display: inline-block;
     text-decoration: none;
     color:#fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     cursor: pointer;
+    transition:all 0.3s ease; /* add tranisition for smoother effect*/
+    border-radius:5px;
 }
 
 .index-button:hover {
-    border: 1px solid #eee95b;
-    background: #eee95b;
+    border: 1px solid orangered;
+    background: orangered;
     transition: 1s;
 }
 
@@ -150,7 +161,7 @@ width: 100%;
 }
 
 .opening-hours, .closed{
-    color:#EA486E
+    color:#980000
 }
 
 /* index footer*/
@@ -296,7 +307,7 @@ width: 100%;
 h1.accesibility {
     margin-top: 20px;
     margin-bottom: 60px;
-   text-align: center;
+    text-align: center;
 }
 
 h2 {
@@ -386,12 +397,13 @@ aside {
 margin-bottom: 5px;
 }
 
-footer {
-    text-align: center;
-    background-color:#EA486E;
-    position:sticky;
-    margin-bottom: 0%;
-    height: 100px;
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height: 60px;
+    background-color: #EA486E;
+    color: black;
 }
 
 #logo {
