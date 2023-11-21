@@ -327,7 +327,7 @@ p {
 #chatGPT-img{
     max-width: 50%;
     max-height: 50%;
-    padding-left: 100%;
+    margin-left: 100%;
 }
 
 #topical-head1{
