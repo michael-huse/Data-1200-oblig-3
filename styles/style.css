@@ -581,22 +581,8 @@ header{
     margin-bottom: 10%;
    text-align: center;
 }
-#libraryImg{
-    max-width: 40%;
-    max-height: 40%;
-    padding-left: 100px;
-}
-
 
 /*Basert på aside*/
-
-.blue-box-header { 
-    padding: 15px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
-   
-}
-
 .newsletter-box { 
     width: 80%;
     padding: 15px;
