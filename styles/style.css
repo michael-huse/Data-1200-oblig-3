@@ -181,161 +181,14 @@ width: 100%;
 
 
 
-#front-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+/*indexpage finish*/
 
-.grid-container a {
- text-decoration: none;
-}
-
-.grid-container{
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.grid-item1 {
-    align-self: center;
-    background-color: white;
-    justify-content: center;
-   border-radius: 20px;
-    text-align: center;
-    margin-bottom: 5%;
-    padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-
-.grid-item2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 5% 0 5%;
-    padding: 5px;
-    border-style: solid;
-    border-width: thick;
-    border-color: azure;
-    border-radius: 20px;
-    background-color: rgba(255, 110, 199, 0.7);
-
-}
-
-.grid-item2 a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: azure;
-    letter-spacing: 0.05em;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
-.grid-item2:hover {
-    background-color: rgba(0,191,255, 0.9);
-}
-
-.grid-item3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-style: solid;
-    border-width: thick;
-    border-color: black;
-    border-radius: 20px;
-    background-color: rgba(140, 140, 140, 0.7);
-    margin: 0 5% 0 5%;
-    padding: 10px; 
-}
-
-
-
-.grid-item3:hover {
-    background-color: rgba(0,0,0, 0.5);
-    text-decoration-color: #fff;
-}
-.frontpage-toggle-container {cursor: pointer;}
-
-
-.btn2-item2{
-        height: 0;
-        overflow: hidden;
-}
-#boring-toggle:checked~.frontpage-toggle-container .btn2-item2 {
-    overflow: visible;
-    text-decoration-color: azure;
-    letter-spacing: 0.05em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-top: 0;
-}
-#boring-toggle {
-    display: none;
-}
-
-.btn2-item1 {
-    border-bottom: #eee95b;
-    border-style: solid;
-    width: 100%;
-    height: 100%;
-}
-.btn2-text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: azure;
-    line-height:1;
-    letter-spacing: 0.05em;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-.front-image{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-image:url(../Bilder/Design\ uten\ navn.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-.main {
+/*Accesibilitypage begins*/
+main {
    margin:0 30%;
 }
 
-.main h3{
-    padding-bottom: 5%;
-}
-
-h1.accesibility {
+h1 {
     margin-top: 20px;
     margin-bottom: 60px;
     text-align: center;
@@ -345,63 +198,14 @@ h2 {
     margin-bottom: 30px;
 }
 
-
-p {
-    line-height: 1.5em;
-    margin-bottom: 30px;
-    color: rgb(46, 46, 46);
+h3{
+    padding-bottom: 5%;
 }
 
 .introduction {
     font-size: 1.2em;
     color: #555;
 }
-
-/*For the topical page */
-
-#openAI-image{
-    max-width: 150%;
-    max-height: 150%;
-    padding-left: 100px;
-}
-
-#chatGPT-img{
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: 100%;
-}
-
-#topical-head1{
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    padding-bottom: 5%;
-}
-
-#bilde-under{
-    text-align: right;
-    padding-right: 12%;
-}
-
-#bluebox-chatgpt{  
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
-    vertical-align: middle;
-    margin-bottom: 10%;
-}
-
-.chatgpt {
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    padding-bottom: 5%;
-}
-
-/*Topical page finish*/
 
 aside { 
     float: right; 
@@ -497,9 +301,6 @@ text-decoration: none;
 }
 }
 
-
-
-
 @media (max-width: 799px) {
     .main {
         margin:0 5%;
@@ -531,7 +332,6 @@ text-decoration: none;
 
 
 header{
-    background-color: #EA486E;
     margin-bottom:70px;
 
 }
@@ -569,35 +369,97 @@ header{
 }
 }
 
+/*Accessibility page finish*/
 
 
-/* Felles stiler for like stiler */
+/*For the topical page */
 
+#openAI-image{
+    max-width: 150%;
+    max-height: 150%;
+    padding-left: 100px;
+}
+
+#chatGPT-img{
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 100%;
+}
+
+#topical-head1{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-bottom: 5%;
+}
+
+#bilde-under{
+    text-align: right;
+    padding-right: 12%;
+}
+
+#bluebox-chatgpt{  
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-bottom: 10%;
+}
+
+.chatgpt {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-bottom: 5%;
+}
+
+/*Topical page finish*/
 
 /*Library page: */
 
+/*Style for the main heading in the library*/
 .h1library {
-    margin-top: 5%;
-    margin-bottom: 10%;
-   text-align: center;
+    margin-top: 5%; /*Provides 5% top margin*/
+    margin-bottom: 10%; /*Provides 10% bottom margin*/
+    text-align: center; /*Centers the main heading*/
+}
+/*Style for the image on library page*/
+#libraryImg{
+    max-width: 40%; /*Limits the max width to 40% of the parent element*/
+    max-height: 40%; /*Limits the max height to 40% of the parent element*/
+    padding-left: 100px; /*100 pixels left padding for the image*/
 }
 
 /*Basert på aside*/
+
+/*Style for blue box header with opening hours*/
+.blue-box-header { 
+    padding: 15px; /*Adds 15px of padding inside the box*/
+    background-color: rgba(93, 212, 216, 0.3); /*Sets the background color for the box*/ 
+    border-radius: 10px; /*Applies a border radius of 10px for rounded corners*/
+}
+/*Style for the weekly newsletter box*/
 .newsletter-box { 
-    width: 80%;
-    padding: 15px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
+    width: 80%; /*Sets the width for the box to 80% of its container*/
+    padding: 15px; /*Adds 15px of padding inside the box*/
+    background-color: rgba(93, 212, 216, 0.3); /*Sets the background color for the box*/
+    border-radius: 10px; /*Applies a border radius of 10px for rounded corners*/
 }
-
+/*Style for the heading inside the newsletter box*/
 .newsletter-box h3{
-    padding-top: 3%;
-    text-align: center;
+    padding-top: 3%; /*Adds 3% padding to the top of the heading inside the box*/
+    text-align: center; /*Centers the heading*/
 }
-
+/*Style for the form inside the newsletter box*/
 .newsletter-box form{
-    text-align: center;
+    text-align: center; /*Centers the text inside the box*/
 }
-
 
 /*Library page finish*/
+
+
+
+
