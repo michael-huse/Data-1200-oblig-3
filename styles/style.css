@@ -371,7 +371,7 @@ header{
 /*Accessibility page finish*/
 
 
-/*For the topical page */
+/*For the topical page:*/
 
 #openAI-image{
     max-width: 150%;
@@ -417,6 +417,7 @@ header{
 
 /*Topical page finish*/
 
+
 /*Library page: */
 
 /*Style for the main heading in the library*/
@@ -430,6 +431,11 @@ header{
     max-width: 40%; /*Limits the max width to 40% of the parent element*/
     max-height: 40%; /*Limits the max height to 40% of the parent element*/
     padding-left: 100px; /*100 pixels left padding for the image*/
+}
+
+#library-pic {
+    width: 100%;
+    height: auto;
 }
 
 /*Basert på aside*/
