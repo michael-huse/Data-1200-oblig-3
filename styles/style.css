@@ -191,10 +191,10 @@ width: 100%;
 
 .grid-container a {
  text-decoration: none;
- color: #000;
 }
 
 .grid-container{
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -203,6 +203,7 @@ width: 100%;
 .grid-item1 {
     align-self: center;
     background-color: white;
+    justify-content: center;
    border-radius: 20px;
     text-align: center;
     margin-bottom: 5%;
@@ -215,22 +216,32 @@ width: 100%;
 
 
 .grid-item2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-width: thick;
-    border-color: azure;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(255, 110, 199, 0.7);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5% 0 5%;
+    padding: 5px;
+    border-style: solid;
+    border-width: thick;
+    border-color: azure;
+    border-radius: 20px;
+    background-color: rgba(255, 110, 199, 0.7);
+
 }
 
 .grid-item2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: azure;
     letter-spacing: 0.05em;
     font-weight: bolder;
@@ -242,20 +253,21 @@ width: 100%;
 }
 
 .grid-item3 {
-    display: flex;
-    align-items: center;
-    border-style: solid;
-    border-width: thick;
-    border-color: black;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(140, 140, 140, 0.7);
-    margin: 0 5% 0 5%;
-    padding: 10px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    border-radius: 20px;
+    background-color: rgba(140, 140, 140, 0.7);
+    margin: 0 5% 0 5%;
+    padding: 10px; 
 }
 
 
@@ -266,16 +278,11 @@ width: 100%;
 }
 .frontpage-toggle-container {cursor: pointer;}
 
-.btn2-item1{
-    margin-bottom: 0px;
-}
-
 
 .btn2-item2{
         height: 0;
         overflow: hidden;
 }
-
 #boring-toggle:checked~.frontpage-toggle-container .btn2-item2 {
     overflow: visible;
     text-decoration-color: azure;
@@ -288,19 +295,25 @@ width: 100%;
     display: none;
 }
 
+.btn2-item1 {
+    border-bottom: #eee95b;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+}
 .btn2-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: azure;
     line-height:1;
     letter-spacing: 0.05em;
     font-weight: bolder;
     text-transform: uppercase;
 }
-
-
-
-
-
-
 .front-image{
     position: absolute;
     top:0;
@@ -313,9 +326,6 @@ width: 100%;
     background-size: cover;
     z-index: -1;
 }
-
- 
-      
 
 .main {
    margin:0 30%;
@@ -346,7 +356,6 @@ p {
     font-size: 1.2em;
     color: #555;
 }
-
 
 /*For the topical page */
 
@@ -568,8 +577,8 @@ header{
 /*Library page: */
 
 .h1library {
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 5%;
+    margin-bottom: 10%;
    text-align: center;
 }
 #libraryImg{
@@ -582,22 +591,17 @@ header{
 /*Basert på aside*/
 
 .blue-box-header { 
-    float: right; 
-    width: 70%;
     padding: 15px;
-    margin-left: 15px;
     background-color: rgba(93, 212, 216, 0.3);
     border-radius: 10px;
-    vertical-align: middle;
+   
 }
 
 .newsletter-box { 
     width: 80%;
     padding: 15px;
-    margin-left: 15px;
     background-color: rgba(93, 212, 216, 0.3);
     border-radius: 10px;
-    vertical-align: middle;
 }
 
 .newsletter-box h3{
@@ -606,13 +610,8 @@ header{
 }
 
 .newsletter-box form{
-    padding-top: 3%;
-    padding-bottom: 3%;
     text-align: center;
 }
 
-form label{
-    padding-bottom: 3%;
-}
 
 /*Library page finish*/
