@@ -17,10 +17,14 @@
 
   <body>
 
-    <section class="index-header"> <!-- section: represents a generic standalone section of a document-->
-      <nav>
+    <header class="index-header">
+      <nav> <!-- Navigation links on the page-->
+        <input id="index-burger-toggle" type="checkbox">
+        <label class="index-hambugrer-toggle-container" for="burger-toggle">
+          <div class="index-menu-icon"></div>
+        </label>
         <div class="nav-links">
-        <ul>
+        <ul class="index-menu">
             <li><a href="accessibility.html">Accessbility</a></li>
             <li><a href="topical.html">Topical </a></li>
             <li><a href="library.html">Library</a></li>
@@ -37,7 +41,7 @@
         </p>
         <a href="library.html" class="index-button"> Facilities</a>
       </div>
-    </section>
+    </header>
 
     <section class="index-main">
       <!-- Adding a map to your website. Source: https://www.youtube.com/watch?v=KIC0OK9nKXY-->

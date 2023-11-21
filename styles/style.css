@@ -8,7 +8,7 @@
 .index-header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../Bilder/oslometbygg.jpeg);
+    background-image: url(../Bilder/OsloMet-bygg2.jpeg); /* source: from OsloMet main page: https://ansatt.oslomet.no/siste-nytt/-/nyhet/siste-nytt-fra-campusprogrammet-*/
     background-position: center;
     background-size: cover;
     position: relative;
@@ -56,9 +56,38 @@ transform: 0.5s; /* tiden til å reagere på hovere*/
 width: 100%;
 }
 
+/** Hamburger menu for index page **/
+
+#index-burger-toggle {display: none;}
+
+
+@media (max-width: 700px) and (min-width:701px) { /* Code from Tengel */
+    .index-menu-icon {
+        display: block;
+        background-image: url(../Bilder/menu-bar.png);
+        background-size:cover;
+        height:40px;
+        width:40px;
+    }    
+    .index-textbox h1 {
+        font-size: 20px;
+}
+.nav-links ul li {
+    display: block;
+}
+.nav-links {
+    position: absolute;
+    background: #eee95b;
+    height: 100vh; 
+    width: 200px;
+    top:0;
+    right: -200px; /* hides the menu bar when scaling on phone*/
+    text-align: left;  }
+}
+
 .index-textbox {
     width: 90%;
-    color: #fff;
+    color:orange;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,23 +123,6 @@ width: 100%;
     transition: 1s;
 }
 
-
-@media (max-width: 700px) {
-    .index-textbox h1 {
-        font-size: 20px;
-}
-.nav-links ul li {
-    display: block;
-}
-.nav-links {
-    position: absolute;
-    background: #eee95b;
-    height: 100vh; 
-    width: 200px;
-    top:0;
-    right: -200px; /* hides the menu bar when scaling on phone*/
-    text-align: left;  }
-}
 
 .index-main {
     display: flex;
@@ -159,6 +171,7 @@ width: 100%;
 .index-copyright {
     text-decoration: underline;
 }
+
 
 
 
