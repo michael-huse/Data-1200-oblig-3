@@ -171,6 +171,10 @@ width: 100%;
    margin:0 30%;
 }
 
+.main h3{
+    padding-bottom: 5%;
+}
+
 h1.accesibility {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -196,14 +200,6 @@ p {
 
 /*For the topical page */
 
-.topical-main{
-    margin:0 20%;
-}
-
-.topical-main h3{
-    text-align: center;
-}
-
 #openAI-image{
     max-width: 150%;
     max-height: 150%;
@@ -215,11 +211,21 @@ p {
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
+    padding-bottom: 5%;
 }
 
 #bilde-under{
     text-align: right;
     padding-right: 12%;
+}
+
+.chatgpt {  
+    width: 50%;
+    padding: 15px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-bottom: 10%;
 }
 
 /*Topical page finish*/
