@@ -569,49 +569,48 @@ header{
 }
 }
 
-
-
-/* Felles stiler for like stiler */
-
-
 /*Library page: */
 
+/*Style for the main heading in the library*/
 .h1library {
-    margin-top: 5%;
-    margin-bottom: 10%;
-   text-align: center;
+    margin-top: 5%; /*Provides 5% top margin*/
+    margin-bottom: 10%; /*Provides 10% bottom margin*/
+    text-align: center; /*Centers the main heading*/
 }
+/*Style for the image on library page*/
 #libraryImg{
-    max-width: 40%;
-    max-height: 40%;
-    padding-left: 100px;
+    max-width: 40%; /*Limits the max width to 40% of the parent element*/
+    max-height: 40%; /*Limits the max height to 40% of the parent element*/
+    padding-left: 100px; /*100 pixels left padding for the image*/
 }
-
 
 /*Basert på aside*/
 
+/*Style for blue box header with opening hours*/
 .blue-box-header { 
-    padding: 15px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
-   
+    padding: 15px; /*Adds 15px of padding inside the box*/
+    background-color: rgba(93, 212, 216, 0.3); /*Sets the background color for the box*/ 
+    border-radius: 10px; /*Applies a border radius of 10px for rounded corners*/
 }
-
+/*Style for the weekly newsletter box*/
 .newsletter-box { 
-    width: 80%;
-    padding: 15px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
+    width: 80%; /*Sets the width for the box to 80% of its container*/
+    padding: 15px; /*Adds 15px of padding inside the box*/
+    background-color: rgba(93, 212, 216, 0.3); /*Sets the background color for the box*/
+    border-radius: 10px; /*Applies a border radius of 10px for rounded corners*/
 }
-
+/*Style for the heading inside the newsletter box*/
 .newsletter-box h3{
-    padding-top: 3%;
-    text-align: center;
+    padding-top: 3%; /*Adds 3% padding to the top of the heading inside the box*/
+    text-align: center; /*Centers the heading*/
 }
-
+/*Style for the form inside the newsletter box*/
 .newsletter-box form{
-    text-align: center;
+    text-align: center; /*Centers the text inside the box*/
 }
-
 
 /*Library page finish*/
+
+
+
+
