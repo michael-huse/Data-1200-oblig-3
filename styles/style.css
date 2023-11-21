@@ -179,23 +179,29 @@ width: 100%;
 }
 
 
+
+
+/*indexpage finish*/
+
+/*Accesibilitypage begins*/
 .accesibility-main {
    margin:0 30%;
 }
 
-.main h3{
-    padding-bottom: 5%;
-}
-
-h1.accesibility {
+.accesibility-main h1 {
     margin-top: 20px;
     margin-bottom: 60px;
     text-align: center;
 }
 
-h2 {
+.accesibility-main h2 {
     margin-bottom: 30px;
 }
+
+.accesibility-main h3{
+    padding-bottom: 5%;
+}
+
 
 
 p {
@@ -209,51 +215,7 @@ p {
     color: #555;
 }
 
-/*For the topical page */
 
-#openAI-image{
-    max-width: 150%;
-    max-height: 150%;
-    padding-left: 100px;
-}
-
-#chatGPT-img{
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: 100%;
-}
-
-#topical-head1{
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    padding-bottom: 5%;
-}
-
-#bilde-under{
-    text-align: right;
-    padding-right: 12%;
-}
-
-#bluebox-chatgpt{  
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
-    vertical-align: middle;
-    margin-bottom: 10%;
-}
-
-.chatgpt {
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    padding-bottom: 5%;
-}
-
-/*Topical page finish*/
 
 aside { 
     float: right; 
@@ -416,6 +378,55 @@ header{
     width: 100%;
 }
 }
+
+/*Accessibility page finish*/
+
+
+/*For the topical page */
+
+#openAI-image{
+    max-width: 150%;
+    max-height: 150%;
+    padding-left: 100px;
+}
+
+#chatGPT-img{
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 100%;
+}
+
+#topical-head1{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-bottom: 5%;
+}
+
+#bilde-under{
+    text-align: right;
+    padding-right: 12%;
+}
+
+#bluebox-chatgpt{  
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-bottom: 10%;
+}
+
+.chatgpt {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-bottom: 5%;
+}
+
+/*Topical page finish*/
 
 /*Library page: */
 
