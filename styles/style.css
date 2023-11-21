@@ -5,89 +5,162 @@
     /* For alle HTML elementene */
 }
 
-nav.index {
+.index-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../Bilder/oslometbygg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.nav {
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between ;
+    padding:2% 6%;
+    justify-content: space-between;
     align-items: center;
 }
-nav.index img {
-    width: 150px; /* Burde kanskje endre logoen eller gjøre at den blir mer intuitiv å trykke på + tok den fra google*/
-    height: auto;
 
-    order: -1; /* Flytter logoen til begynnelsen av flex containeren*/
-}
-
-/* Styler lenkene i nav*/
+/* Styling for the navigation links starts here*/
 .nav-links {
     background-color: black;
-    flex: 1; /* tar plassen på raden*/
-    text-align: right; /* setter teksten på høyreside*/
+    flex: 1; /* occupies the text on the row*/
+    text-align: right; /* text on the right side*/
 }
 
 .nav-links ul li { 
-    list-style: none; /* fjerner bullet points*/
+    list-style: none; /* removes the bullet points*/
     display: inline-block;
-    padding: 8px 12px; /* lager mellomrom mellom listene*/
+    padding: 8px 12px; /* creates space between the links*/
     position: relative;
-
 }
+
 .nav-links ul li a {
     color:white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-.nav-links ul li::after { /* stilen til hover effekten*/
+
+.nav-links ul li::after { 
 content: "";
-width: 0%;
-height: 4px; /* tykkelsen på hover-effekten */
+width: 0%; /* hidding the underline*/
+height: 2px; /* thickness of the hover underline */
 background: #eee95b ;
 display: block;
 margin: auto;
 transform: 0.5s; /* tiden til å reagere på hovere*/
 }
+
 .nav-links ul li:hover::after {
 width: 100%;
 }
 
-/* source: https://www.w3schools.com/howto/howto_css_hero_image.asp */
-body, html {
-    height: 100%
-}
-
-.index-image {
-    position: relative;
-    height: 100%
-}
-
-.index-image::before {
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../Bilder/oslometbygg.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.6;
-}
-
-/* Place text in the middle of the image */
-.index-image-text {
-    text-align: center;
+.index-textbox {
+    width: 90%;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate (-50%, -50%);
-    color: white;
+    transform: translate(-50%,-50%); /* centering the text in the div*/
+    text-align: center;
 }
 
-.index-footer {
-    background-color: #e7dbdb;
-    color:aqua;
+.index-textbox h1 {
+    font-size: 62px;
 }
+
+.index-textbox p{
+    margin: 10px 0 40 px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.index-button {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.index-button:hover {
+    border: 1px solid #eee95b;
+    background: #eee95b;
+    transition: 1s;
+}
+
+
+@media (max-width: 700px) {
+    .index-textbox h1 {
+        font-size: 20px;
+}
+.nav-links ul li {
+    display: block;
+}
+.nav-links {
+    position: absolute;
+    background: #eee95b;
+    height: 100vh; 
+    width: 200px;
+    top:0;
+    right: -200px; /* hides the menu bar when scaling on phone*/
+    text-align: left;  }
+}
+
+.index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Two columns*/
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.index-map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-text {
+    padding: 1rem 2rem; /* first value top and second value is bottom */
+}
+
+.opening-hours, .closed{
+    color:#EA486E
+}
+
+/* index footer*/
+
+.index-footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height: 60px;
+    background-color: #000;
+    color:#eee95b
+}
+
+.index-footer h1 {
+    font-size: medium;
+}
+
+.index-copyright {
+    text-decoration: underline;
+}
+
+
 
 
 
@@ -225,7 +298,38 @@ p {
     color: #555;
 }
 
-  aside { 
+
+/*For the topical page */
+
+.topical-main{
+    margin:0 20%;
+}
+
+.topical-main h3{
+    text-align: center;
+}
+
+#openAI-image{
+    max-width: 150%;
+    max-height: 150%;
+    padding-left: 100px;
+}
+
+#topical-head1{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#bilde-under{
+    text-align: right;
+    padding-right: 12%;
+}
+
+/*Topical page finish*/
+
+aside { 
     float: right; 
     width: 35%;
     padding: 15px;
@@ -236,6 +340,8 @@ p {
     vertical-align: middle;
 
 }
+
+/* burde vi flytte denne lengre opp?*/
 @media (max-width: 799px) {
    aside {
      float: none; 
@@ -243,7 +349,6 @@ p {
      position: inherit;
     }
 }
-
 .main li {
 margin-bottom: 5px;
 }
@@ -392,13 +497,55 @@ header{
 
 /* Felles stiler for like stiler */
 
-.headingsl{
-    text-align: center;
-    font-size: 28pt;
+
+/*Library page: */
+
+.h1library {
+    margin-top: 20px;
+    margin-bottom: 60px;
+   text-align: center;
 }
-#libraryp{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#libraryImg{
+    max-width: 40%;
+    max-height: 40%;
+    padding-left: 100px;
+}
+
+
+/*Basert på aside*/
+
+.blue-box-header { 
+    float: right; 
+    width: 70%;
+    padding: 15px;
+    margin-left: 15px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.newsletter-box { 
     width: 80%;
+    padding: 15px;
+    margin-left: 15px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    vertical-align: middle;
 }
+
+.newsletter-box h3{
+    padding-top: 3%;
+    text-align: center;
+}
+
+.newsletter-box form{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+form label{
+    padding-bottom: 3%;
+}
+
+/*Library page finish*/
