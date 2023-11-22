@@ -171,64 +171,10 @@ width: 100%;
 
 
 
-/*indexpage finish*/
-
-/*Accesibilitypage begins*/
-main {
-   margin:0 30%; /* creates a narrower page for readability*/
-}
-
-h1 { /* Centers text, and creates space over and under the h1*/
-    margin-top: 10%;
-    margin-bottom: 60
-    x;
-    text-align: center;
-}
-
-h2 { /* Creates space under the h2*/
-    margin-bottom: 8%;
-}
-
-h3{ /* Creates space under the h3*/
-    padding-bottom: 5%;
-}
-
-.introduction { /* Styles the introduction paragraph of the accesibility page*/
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 5%;
-}
+/**Indexpage finish**/
 
 
-aside { /* Positions and styles the aside box with information about accesibility */
-    float: right; 
-    width: 35%;
-    padding: 15px;
-    margin-left: 5%;
-    font-style: italic;
-    background-color: rgba(93, 212, 216, 0.3);
-    border-radius: 10px;
-    
-}
-
-@media (max-width: 799px) { /* Centers aside by inheriting position of main when Screen width less than 800px */
-   aside {
-     float: none; 
-     width: 100%;
-     margin: 0 auto;
-    }
-}
-
- 
-footer { /* Creates a grid structure inside footer, ads color to text and background*/
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
-    background-color: #EA486E;
-    height: 4rem;
-    color: black;
-    font-size: medium;
-}
+/** Global CSS **/
 
 #logo { /* Positions group logo to the left and fills the navbar with the logo*/
     height:100%;
@@ -348,14 +294,42 @@ text-decoration: none;
     width: 100%;
     background-color: #d6d2c4;
     color: white;
-    
 }
 }
 
-/*Accessibility page finish*/
+main {
+    margin:0 30%; /* creates a narrower page for readability*/
+ }
+ 
+ h1 { /* Centers text, and creates space over and under the h1*/
+     margin-top: 10%;
+     margin-bottom: 60
+     x;
+     text-align: center;
+ }
+ 
+ h2 { /* Creates space under the h2*/
+     margin-bottom: 8%;
+ }
+ 
+ h3{ /* Creates space under the h3*/
+     padding-bottom: 5%;
+ }
+
+ footer { /* Creates a grid structure inside footer, ads color to text and background*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height: 4rem;
+    margin-top: 3rem; /*creates space between the text and footer*/
+    background-color: #EA486E;
+    color: black;
+    font-size: medium;
+}
 
 
-/*For the topical page:*/
+
+ /**For the topical page begins here**/
 
 .images{ 
    height: 8rem;
@@ -404,7 +378,31 @@ text-decoration: none;
 /*Topical page finished*/
 
 
-/*Library page: */
+aside { /* Positions and styles the aside box with information about accesibility */
+    float: right; 
+    width: 35%;
+    padding: 15px;
+    margin-left: 5%;
+    font-style: italic;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 799px) { /* Centers aside by inheriting position of main when Screen width less than 800px */
+   aside {
+     float: none; 
+     width: 100%;
+     margin: 0 auto;
+    }
+}
+
+/*Accessibility page finish*/
+
+
+
+
+/**Library page styling **/
 
 /*Style for the image on library page*/
 #libraryImg{
@@ -433,9 +431,6 @@ text-decoration: none;
     padding-right: 12%;
 }
 
-
-/*Basert styling på aside*/
-
 /*Style for blue box header with opening hours*/
 .blue-box-header { 
     padding: 15px; /*Adds 15px of padding inside the box*/
@@ -460,7 +455,7 @@ text-decoration: none;
     text-align: center; /*Centers the text inside the box*/
 }
 
-/*Library page finish*/
+/**Library page finish**/
 
 
 
