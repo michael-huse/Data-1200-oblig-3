@@ -357,7 +357,7 @@ text-decoration: none;
 
 /*For the topical page:*/
 
-#openAI-image{ 
+.images{ 
    height: 8rem;
    margin:3%;
 
