@@ -162,20 +162,10 @@ width: 100%;
 /* index footer*/
 
 .index-footer {
-    display: grid; /*Display as grid*/
-    grid-template-columns: repeat(3,1fr); /* Three columns*/
-    place-items: center;
+    text-align: center;
     height: 3.75rem;
     background-color: #000;
     color:#eee95b
-}
-
-.index-footer h1 {
-    font-size: medium;
-}
-
-.index-copyright {
-    text-decoration: underline;
 }
 
 
