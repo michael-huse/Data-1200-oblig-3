@@ -374,7 +374,7 @@ header{
 }
 
 #chatGPT-img{
-    height: 6rem;
+    height: 8rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -412,12 +412,6 @@ header{
 
 /*Library page: */
 
-/*Style for the main heading in the library*/
-.h1library {
-    margin-top: 5%; /*Provides 5% top margin*/
-    margin-bottom: 10%; /*Provides 10% bottom margin*/
-    text-align: center; /*Centers the main heading*/
-}
 /*Style for the image on library page*/
 #libraryImg{
     max-width: 40%; /*Limits the max width to 40% of the parent element*/
