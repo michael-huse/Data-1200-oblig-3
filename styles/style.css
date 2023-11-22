@@ -331,60 +331,51 @@ main {
 
  /**For the topical page begins here**/
 
-#openAI-image{ 
-    height: 8rem;
-    margin:3%;
- 
- }
- 
- #chatGPT-img{ /* Positions the chat gpt logo center and adjusts the size with "root em"*/
-     height: 8rem;
-     align-items: center;
-     justify-content: center;
-     display: flex;
-     vertical-align: center;
-   
- }
- 
- .topical { /* centers the h2 of the topical page*/
-     text-align: center;
- }
- 
- #topical-head1{ /* creates a grid and places the items inside in 2 seperate column fractions of the grid */
-     display: grid;
-     align-items: center; 
-     grid-template-columns: 1fr 1fr;
-     column-gap: 5px;
-     margin-bottom: 2%;
- }
- 
- 
- #bluebox-chatgpt{  
-     width: 100%;
-     padding: 20px;
-     background-color: rgba(93, 212, 216, 0.3);
-     border-radius: 10px; 
- 
- }
- 
- .chatgpt {
-     display: flex;
-     align-items: center; 
-     justify-content: center;
-     padding-bottom: 5%;
- 
- }
- 
- /**Topical page finished**/
+.images{ 
+   height: 8rem;
+   margin:3%;
 
-
-/**Accesibilitypage begins**/
-
-.introduction { /* Styles the introduction paragraph of the accesibility page*/
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 5%;
 }
+
+#chatGPT-img{ /* Positions the chat gpt logo center and adjusts the size with "root em"*/
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    vertical-align: center;
+  
+}
+
+.topical { /* centers the h2 of the topical page*/
+    text-align: center;
+}
+
+#topical-head1{ /* creates a grid and places the items inside in 2 seperate column fractions of the grid */
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    margin-bottom: 2%;
+}
+
+
+#bluebox-chatgpt{  
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(93, 212, 216, 0.3);
+    border-radius: 10px; 
+
+}
+
+.chatgpt {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+/*Topical page finished*/
 
 
 aside { /* Positions and styles the aside box with information about accesibility */
