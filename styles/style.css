@@ -310,6 +310,7 @@ main {
  
  h2 { /* Creates space under the h2*/
      margin-bottom: 8%;
+     margin-top:4rem;
  }
  
  h3{ /* Creates space under the h3*/
@@ -396,6 +397,27 @@ aside { /* Positions and styles the aside box with information about accesibilit
      margin: 0 auto;
     }
 }
+
+/**Styling the accessibility test images */
+
+.pic-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; /* wrap onto the next line if containers width is exceeded*/
+    background-color: rgba(93, 212, 216, 0.3);
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+.pic-gallery img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1.25em;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 
 /*Accessibility page finish*/
 
