@@ -110,8 +110,8 @@ width: 100%;
     transition: 1s;
 }
 
-/*Media query for small screens*/
-@media (max-width: 700px) and (min-width:701px) { /* Code from Tengel lecture on hamburger menu*/
+/*Media query for small screens links*/
+@media (max-width: 700px) and (min-width:701px) {
     
 .nav-links ul li {
     display: block;
