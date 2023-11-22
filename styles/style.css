@@ -360,15 +360,16 @@ main {
 }
 
 
-#bluebox-chatgpt{  
+#bluebox-chatgpt{  /*creates a blue box around div in html*/
     width: 100%;
     padding: 20px;
     background-color: rgba(93, 212, 216, 0.3);
     border-radius: 10px; 
-
+    margin-right: 30%;
 }
 
 .chatgpt {
+    margin-top: 2%;
     display: flex;
     align-items: center; 
     justify-content: center;
