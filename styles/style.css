@@ -224,16 +224,19 @@ aside { /* Positions and styes the aside box with information about accesibility
    aside {
      float: none; 
      width: 100%;
-     position: inherit;
+     display: flex;
+     justify-content: center;
+     align-items: center;
     }
 }
 
 
+
+ 
 footer { /* Creates a grid structure inside footer, ads color to text and background*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
     place-items: center;
-    height: 0px;
     background-color: #EA486E;
     color: black;
 }
@@ -408,10 +411,9 @@ header{
 }
 
 .chatgpt {
-    display: grid;
+    display: flex;
     align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    justify-content: center;
     padding-bottom: 5%;
 }
 
