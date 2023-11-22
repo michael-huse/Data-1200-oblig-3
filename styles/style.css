@@ -251,18 +251,18 @@ footer { /* Creates a grid structure inside footer, ads color to text and backgr
 
 @media (min-width: 800px) { /*Controls how the navbar is displayed when screen larger than 800px */
 
-    .menu {  /* */
+    .menu {  
     display: flex; /* Spreads the page links vertically over the navbar*/
-    list-style-type: none;
+    list-style-type: none; 
     margin-left: 5%;
     margin-right: 10%;
-    height: 60px;
+    height: 60px; /* Sets the height of the navbar*/
     border-bottom-style: solid;
     border-color: #555;
 }
 
-.active {
-    height:100%;
+.active { /* Puts a red line under the link button for the current page */
+    height:100%; 
     display: flex;
     align-items: center;
     border-bottom-style: solid;
@@ -271,7 +271,7 @@ footer { /* Creates a grid structure inside footer, ads color to text and backgr
     
 }
 
-.menu a {
+.menu a {  /* Designs anchor elements in the ul menu */
 text-decoration: none;
    font-weight: bold;
    font-size: 1.3em;
@@ -280,14 +280,14 @@ text-decoration: none;
    color:#000;
 }
 
-.menu li{
+.menu li{ /* Designs the li element surrounding the ancor elements in the ul menu */
     height: 100%;
     display: flex;
     align-items: center;
     color:#000;
 }
 
-.menu a:hover {
+.menu a:hover { /* Creates a hover effect when you move the cursor over the the anchor elements in the ul menu */
     color:#d6d2c4;
     height:100%;
     display: flex;
@@ -296,16 +296,12 @@ text-decoration: none;
 }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 799px) { /* Compresses the navbar inside the burgermenu when the screen is less than 800px */
     main {
         margin:0 5%;
      }
 
-    .accessibility {
-        background-color:black;
-    }
-
-.menu-icon {
+.menu-icon { /* Adds the burger menu picture and sets size and position*/
     display: block;
     background-image: url("../Bilder/menu-bar.png");
     background-size: cover;
@@ -316,31 +312,26 @@ text-decoration: none;
 }
 
 
-.hamburger-toggle-container {cursor: pointer;}
+.hamburger-toggle-container {cursor: pointer;} /* Mouse pointer becomes a hand when hovering over the burger menu */
 
 @media (max-width: 799px) {
-  #logo {
+  #logo { /* Hides the group logo from the ul when the screen becomes less than 800px*/
     display: none;
   }
 }
 
-
-
-header{
-    margin-bottom:70px;
-
-}
-.menu a:hover {
+.menu a:hover { /* creates the color effect over the */
     color:#d6d2c4;
+    background-color:#000;
     height:100%;
     width: 100%;
-    background-color:#000;
+    
     display: flex;
     align-items: center;
-
-
 }
-.menu a {
+
+
+.menu a { /* styles the menu that drops down from the burger menu*/
     text-decoration: none;
        font-weight: bold;
        font-size: 1.3em;
@@ -350,17 +341,18 @@ header{
        line-height: 2em;
     }
     
-.menu li {
+.menu li { /* Hides the menu before the burger menu is toggled*/
     height: 0px;
     overflow: hidden; 
     display: flex;
     align-items: center;
 }
-#burger-toggle:checked~.menu li {
+#burger-toggle:checked~.menu li { /* Inserts the menu ul when the burger toggle is checked*/
     height: 100%;
+    width: 100%;
     background-color: #d6d2c4;
     color: white;
-    width: 100%;
+    
 }
 }
 
@@ -369,13 +361,13 @@ header{
 
 /*For the topical page:*/
 
-#openAI-image{
+#openAI-image{ 
    height: 8rem;
    margin:3%;
 
 }
 
-#chatGPT-img{
+#chatGPT-img{ /* Positions the chat gpt logo center and adjusts the size with "root em"*/
     height: 8rem;
     align-items: center;
     justify-content: center;
@@ -384,11 +376,11 @@ header{
   
 }
 
-.topical {
+.topical { /* centers the h2 of the topical page*/
     text-align: center;
 }
 
-#topical-head1{
+#topical-head1{ /* creates a grid and places the items inside in 2 seperate column fractions of the grid */
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr;
@@ -431,7 +423,7 @@ header{
 }
 
 
-#library-top-content{
+#library-top-content{ /*  creates grid and divides the library top content into two fractions*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
