@@ -215,13 +215,9 @@ aside { /* Positions and styles the aside box with information about accesibilit
    aside {
      float: none; 
      width: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     margin: 0 auto;
     }
 }
-
-
 
  
 footer { /* Creates a grid structure inside footer, ads color to text and background*/
@@ -430,7 +426,7 @@ header{
 }
 
 
-/*Basert på aside*/
+/*Basert styling på aside*/
 
 /*Style for blue box header with opening hours*/
 .blue-box-header { 
