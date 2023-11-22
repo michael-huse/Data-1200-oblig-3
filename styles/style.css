@@ -229,7 +229,9 @@ footer { /* Creates a grid structure inside footer, ads color to text and backgr
     grid-template-columns: repeat(3,1fr);
     place-items: center;
     background-color: #EA486E;
+    height: 4rem;
     color: black;
+    font-size: medium;
 }
 
 #logo { /* Positions group logo to the left and fills the navbar with the logo*/
