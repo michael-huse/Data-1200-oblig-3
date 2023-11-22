@@ -366,7 +366,9 @@ header{
 /*For the topical page:*/
 
 #openAI-image{
-   height: 30%;
+   height: 8rem;
+   margin:3%;
+
 }
 
 #chatGPT-img{
@@ -376,6 +378,10 @@ header{
     display: flex;
     vertical-align: center;
   
+}
+
+.topical {
+    text-align: center;
 }
 
 #topical-head1{
@@ -420,8 +426,18 @@ header{
     height: auto;
 }
 
-#bilde-under{
+
+#library-top-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    margin-top: 2rem;
+    
+}
+
+#Library-picture-text{
     text-align: right;
+    margin-bottom: 4rem;
     padding-right: 12%;
 }
 
@@ -436,6 +452,7 @@ header{
 }
 /*Style for the weekly newsletter box*/
 .newsletter-box { 
+    margin-top: 2rem;
     width: 80%; /*Sets the width for the box to 80% of its container*/
     padding: 15px; /*Adds 15px of padding inside the box*/
     background-color: rgba(93, 212, 216, 0.3); /*Sets the background color for the box*/
